@@ -51,7 +51,7 @@ export const HERO_COPY = {
 
 // ── Empathy Block (VoC-driven copy) ──
 export const EMPATHY_COPY = {
-  headline: "You deserve to feel whole again.",
+  headline: "You deserve a life you truly value.",
   paragraphs: [
     "If you're juggling responsibilities, feeling stuck, or craving meaningful change — you're not alone. That constant hum of overwhelm, the stress that never quite fades, the sense that something needs to shift… I've been exactly where you are.",
     "I know what it feels like when your life doesn't align with your values — when uncertainty, emotional exhaustion, and daily pressure take center stage. And I also know that it doesn't have to stay that way.",
@@ -126,9 +126,9 @@ export const PROGRAMS = [
   {
     id: "transformation",
     name: "Value Your Life Transformation",
-    price: "$1,400",
+    price: "$1,200",
     duration: "12 weeks of coaching & nutrition support",
-    paymentPlan: "Or 3 payments of $500",
+    paymentPlan: "Or 3 payments of $400",
     description:
       "Our signature program — designed for individuals committed to creating meaningful, sustainable life change across mind, body, and purpose.",
     includes: [

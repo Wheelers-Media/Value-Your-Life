@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import EmpathyBlock from "@/components/sections/EmpathyBlock";
-import Testimonials from "@/components/sections/Testimonials";
 import GHLBookingWrapper from "@/components/ghl/GHLBookingWrapper";
 
 export const metadata: Metadata = {
@@ -22,6 +21,17 @@ export default function AboutPage() {
             I believe that true wellness goes beyond what&apos;s on your plate. It&apos;s about 
             how you feel in your mind, body, and spirit. As a Certified Holistic Nutritional 
             Consultant™ and Life Coach, my passion is helping you find that balance.
+          </p>
+          <p className="text-earth-600 text-lg leading-relaxed mt-6">
+            My journey began in 2002, driven by curiosity and a desire to understand how food 
+            and mindset impact how we feel. Over the years, I committed to studying, researching, 
+            and applying strategies that support not only physical health, but also emotional 
+            balance and overall well-being. In 2020, I became a Certified Holistic Nutritional 
+            Consultant through the Canadian School of Natural Nutrition. With time, I realized 
+            nutrition alone wasn&apos;t enough. Lasting change also requires mindset, support, 
+            and practical tools. That realization led me to expand into life coaching, integrating 
+            nutrition, mental wellness, and lifestyle support to help people create meaningful, 
+            sustainable change and live lives they truly value.
           </p>
         </div>
       </div>
@@ -54,7 +64,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Testimonials />
       <GHLBookingWrapper />
     </div>
   );
