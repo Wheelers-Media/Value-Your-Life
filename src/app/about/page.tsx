@@ -43,7 +43,7 @@ export default function AboutPage() {
           <h2 className="font-serif font-bold text-3xl text-earth-800 mb-8">
             My Philosophy
           </h2>
-          <div className="text-earth-600 space-y-6 text-lg leading-relaxed text-left">
+          <div className="text-earth-600 space-y-6 text-lg leading-relaxed text-center max-w-3xl mx-auto">
             <p>
               My approach to wellness is rooted in empathy, bio-individuality, and practical, 
               sustainable change. There is no &quot;one-size-fits-all&quot; when it comes to your health.

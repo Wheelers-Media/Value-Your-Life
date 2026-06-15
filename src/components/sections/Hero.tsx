@@ -89,7 +89,7 @@ export default function Hero() {
 
         {/* Trust indicator */}
         <p
-          className="animate-fade-in-up text-earth-400 text-sm mt-8"
+          className="animate-fade-in-up text-center w-full mx-auto text-earth-400 text-sm mt-8"
           style={{ animationDelay: "0.6s" }}
         >
           Free 30-minute discovery session · No commitment required
