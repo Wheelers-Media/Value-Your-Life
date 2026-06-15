@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /* ─────────────────────────────────────────────────────────────
-   VALUE YOUR LIFE WELLNESS — Design System
+   VALUE YOUR LIFE WELLNESS - Design System
    Biophilic palette · Warm neutrals · Organic shapes
    ───────────────────────────────────────────────────────────── */
 
@@ -92,7 +92,7 @@
 }
 
 /* ─────────────────────────────────────────────────────────────
-   Light Theme (default — warm, biophilic)
+   Light Theme (default: warm, biophilic)
    ───────────────────────────────────────────────────────────── */
 :root {
   --background: #FDF8F0;

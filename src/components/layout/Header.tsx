@@ -86,7 +86,7 @@ export default function Header() {
             </Link>
           ))}
 
-          {/* Primary CTA — using <a> directly to avoid button > a nesting */}
+          {/* Primary CTA: using <Link> directly to avoid button > a nesting */}
           <Link
             href={PRIMARY_CTA.href}
             id="header-cta"

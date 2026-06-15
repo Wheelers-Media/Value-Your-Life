@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────
-// Value Your Life Wellness — Brand Constants & Compliance Copy
+// Value Your Life Wellness: Brand Constants & Compliance Copy
 // ─────────────────────────────────────────────────────────────
 // LEGAL NOTE: All copy uses structure/function claims ONLY.
 // Never use "treats", "cures", "diagnoses", or "prevents" with
@@ -51,7 +51,7 @@ export const PRIMARY_CTA = {
 export const HERO_COPY = {
   headline: "Value Yourself. Nourish Your Mind. Transform Your Life.",
   subheadline:
-    "Compassionate mental wellness coaching and holistic nutrition guidance — designed around your unique life.",
+    "Compassionate mental wellness coaching and holistic nutrition guidance, designed around your unique life.",
   primaryCta: "Book a Free Discovery Session",
   softCta: "Explore Programs",
 } as const;
@@ -60,9 +60,9 @@ export const HERO_COPY = {
 export const EMPATHY_COPY = {
   headline: "You deserve a life you truly value.",
   paragraphs: [
-    "If you're juggling responsibilities, feeling stuck, or craving meaningful change — you're not alone. That constant hum of overwhelm, the stress that never quite fades, the sense that something needs to shift… I've been exactly where you are.",
-    "I know what it feels like when your life doesn't align with your values — when uncertainty, emotional exhaustion, and daily pressure take center stage. And I also know that it doesn't have to stay that way.",
-    "Together, we'll create a clear path forward — one built around your goals, your schedule, and your life. No cookie-cutter plans. No clinical jargon. Just real support from someone who truly gets it.",
+    "If you're juggling responsibilities, feeling stuck, or craving meaningful change, you're not alone. That constant hum of overwhelm, the stress that never quite fades, the sense that something needs to shift… I've been exactly where you are.",
+    "I know what it feels like when your life doesn't align with your values, when uncertainty, emotional exhaustion, and daily pressure take center stage. And I also know that it doesn't have to stay that way.",
+    "Together, we'll create a clear path forward, one built around your goals, your schedule, and your life. No cookie-cutter plans. No clinical jargon. Just real support from someone who truly gets it.",
   ],
   cta: "Learn More About My Approach",
 } as const;
@@ -148,7 +148,7 @@ export const PROGRAMS = [
     duration: "12 weeks of coaching & nutrition support",
     paymentPlan: "Or 3 payments of $450",
     description:
-      "Our signature program — your highest-level transformation experience, designed for individuals committed to deep, sustainable change across mind, body, and purpose.",
+      "Our signature program, your highest-level transformation experience, designed for individuals committed to deep, sustainable change across mind, body, and purpose.",
     includes: [
       "Initial 90-minute deep dive session",
       "Eleven 30-minute weekly coaching sessions",
@@ -205,7 +205,7 @@ export const ADD_ON_SERVICES = [
 export const TESTIMONIALS = [
   {
     quote:
-      "Working with Danielle gave me the clarity I'd been searching for. I finally feel like I have practical tools to manage my stress — not just band-aids.",
+      "Working with Danielle gave me the clarity I'd been searching for. I finally feel like I have practical tools to manage my stress, not just band-aids.",
     author: "Sarah M.",
     program: "Foundations of Wellness",
   },
@@ -217,7 +217,7 @@ export const TESTIMONIALS = [
   },
   {
     quote:
-      "The discovery session alone helped me realize I wasn't stuck — I just needed the right support. Danielle listens in a way that makes you feel truly heard.",
+      "The discovery session alone helped me realize I wasn't stuck, I just needed the right support. Danielle listens in a way that makes you feel truly heard.",
     author: "Amanda K.",
     program: "Free Discovery Session",
   },

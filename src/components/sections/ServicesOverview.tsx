@@ -21,7 +21,7 @@ export default function ServicesOverview() {
       id="services-overview"
       className="relative py-24 md:py-32 bg-sand-100"
     >
-      <div className="container-brand">
+      <div className="w-full max-w-[1400px] mx-auto px-6 md:px-10">
         {/* ── Section Header ── */}
         <div className="text-center mb-16 max-w-2xl mx-auto">
           <span className="inline-flex items-center gap-2 text-teal-500 text-sm font-medium tracking-wide uppercase mb-4">
@@ -36,14 +36,14 @@ export default function ServicesOverview() {
             <span className="text-gradient-warm">your life</span>
           </h2>
           <p className="text-earth-500 text-lg leading-relaxed mx-auto">
-            Every program is personalized to your needs — because no two
+            Every program is personalized to your needs, because no two
             journeys to wellness are the same. Choose the level of support
             that&apos;s right for you.
           </p>
         </div>
 
         {/* ── Program Cards ── */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 xl:gap-6">
           {displayPrograms.map((program) => (
             <Card
               key={program.id}
@@ -61,7 +61,7 @@ export default function ServicesOverview() {
                 </div>
               )}
 
-              <CardHeader className="pb-2 pt-8 px-7">
+              <CardHeader className="pb-2 pt-8 px-5">
                 <CardDescription
                   className={`text-sm font-medium uppercase tracking-wider mb-2 ${
                     program.featured ? "text-sand-200" : "text-sage-500"
@@ -99,7 +99,7 @@ export default function ServicesOverview() {
                 </div>
               </CardHeader>
 
-              <CardContent className="px-7 pb-4 flex-grow">
+              <CardContent className="px-5 pb-4 flex-grow">
                 <p
                   className={`text-sm leading-relaxed mb-6 ${
                     program.featured
@@ -133,20 +133,20 @@ export default function ServicesOverview() {
                 </ul>
               </CardContent>
 
-              <CardFooter className="px-7 pb-8 pt-4 mt-auto">
+              <CardFooter className="px-5 pb-8 pt-4 mt-auto">
                 <a
                   href={CONTACT.bookingUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   id={`cta-${program.id}`}
-                  className={`flex items-center justify-center gap-2 w-full font-semibold py-3 rounded-full transition-all duration-300 group/btn ${
+                  className={`flex items-center justify-center gap-1.5 w-full font-semibold py-3 px-4 rounded-full transition-all duration-300 group/btn text-sm whitespace-nowrap ${
                     program.featured
                       ? "bg-sand-50 text-terracotta-600 hover:bg-sand-100 shadow-lg"
                       : "bg-terracotta-500 text-sand-50 hover:bg-terracotta-600 shadow-md hover:shadow-lg"
                   }`}
                 >
                   {program.cta}
-                  <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
+                  <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1 shrink-0" />
                 </a>
               </CardFooter>
             </Card>
@@ -161,7 +161,7 @@ export default function ServicesOverview() {
                 Not sure where to start?
               </p>
               <p className="text-earth-500 text-sm mt-1">
-                Book a free 30-minute discovery session — no commitment
+                Book a free 30-minute discovery session with no commitment
                 required.
               </p>
             </div>

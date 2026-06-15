@@ -39,7 +39,7 @@ export default function Footer() {
             </Link>
             <p className="text-earth-300 text-sm leading-relaxed max-w-xs">
               Compassionate mental wellness coaching and holistic nutrition
-              guidance — designed around your unique life.
+              guidance, designed around your unique life.
             </p>
           </div>
 
@@ -114,7 +114,7 @@ export default function Footer() {
             <div className="flex items-start gap-3 mb-4">
               <Image
                 src="/images/csnn-badge.jpeg"
-                alt="Certified Holistic Nutritional Consultant — CSNN"
+                alt="Certified Holistic Nutritional Consultant (CSNN)"
                 width={56}
                 height={56}
                 className="rounded-lg bg-white/90 p-1"
