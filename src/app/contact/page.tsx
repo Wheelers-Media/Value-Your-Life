@@ -4,9 +4,18 @@ import { Mail, MapPin } from "lucide-react";
 import { CONTACT } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Contact & Booking | Value Your Life Wellness",
+  title: "Contact & Free Discovery Session | Kamloops Wellness Coach",
   description:
-    "Book your free discovery session or get in touch with Danielle Mayer for personalized mental wellness and nutrition coaching.",
+    "Get in touch with Danielle Mayer at Value Your Life Wellness. Book your free 30-minute discovery session or contact us directly with health questions in Kamloops, BC.",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "Contact & Free Discovery Session | Kamloops Wellness Coach",
+    description:
+      "Get in touch with Danielle Mayer at Value Your Life Wellness. Book your free 30-minute discovery session or contact us directly with health questions in Kamloops, BC.",
+    url: "https://valueyourlifewellness.ca/contact",
+  },
 };
 
 export default function ContactPage() {

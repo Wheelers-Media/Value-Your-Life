@@ -4,9 +4,18 @@ import EmpathyBlock from "@/components/sections/EmpathyBlock";
 import BookingSection from "@/components/booking/BookingSection";
 
 export const metadata: Metadata = {
-  title: "About Danielle | Value Your Life Wellness",
+  title: "About Danielle Mayer | Certified Holistic Nutritional Consultant",
   description:
-    "Meet Danielle Mayer, C.H.N.C., your compassionate partner in mental wellness, nutrition, and life coaching.",
+    "Meet Danielle Mayer, C.H.N.C., your compassionate partner in mental wellness, nutrition, and life coaching in Kamloops, BC. Learn about her holistic, bio-individual approach to wellness.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About Danielle Mayer | Certified Holistic Nutritional Consultant",
+    description:
+      "Meet Danielle Mayer, C.H.N.C., your compassionate partner in mental wellness, nutrition, and life coaching in Kamloops, BC. Learn about her holistic, bio-individual approach to wellness.",
+    url: "https://valueyourlifewellness.ca/about",
+  },
 };
 
 export default function AboutPage() {

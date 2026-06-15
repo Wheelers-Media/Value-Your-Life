@@ -3,9 +3,16 @@ import { FileText, ShieldAlert, Calendar, RefreshCw, Scale } from "lucide-react"
 import { CONTACT, BRAND, DISCLAIMER } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Value Your Life Wellness",
+  title: "Terms of Service",
   description:
     "Terms of Service for Value Your Life Wellness. Read our service agreements, client responsibilities, cancellation policies, and medical disclaimers.",
+  alternates: {
+    canonical: "/terms",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function TermsPage() {

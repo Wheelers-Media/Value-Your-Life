@@ -3,9 +3,16 @@ import { Shield, Lock, Eye, Mail, MapPin } from "lucide-react";
 import { CONTACT, BRAND } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Value Your Life Wellness",
+  title: "Privacy Policy",
   description:
     "Privacy Policy for Value Your Life Wellness. Learn how we collect, protect, and handle your personal health and nutrition coaching data in compliance with PIPEDA and CASL.",
+  alternates: {
+    canonical: "/privacy",
+  },
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function PrivacyPage() {

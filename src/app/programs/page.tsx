@@ -5,9 +5,18 @@ import { PROGRAMS, ADD_ON_SERVICES, CONTACT } from "@/lib/constants";
 import BookingSection from "@/components/booking/BookingSection";
 
 export const metadata: Metadata = {
-  title: "Programs & Services | Value Your Life Wellness",
+  title: "Holistic Wellness Programs & Nutrition Packages | Kamloops",
   description:
-    "Explore our comprehensive mental wellness and holistic nutrition programs. From quick resets to full lifestyle transformations, find the right support for your health journey.",
+    "Browse tailored wellness coaching and holistic nutrition packages by Danielle Mayer, C.H.N.C. in Kamloops, BC. Packages include the 3-week Refresh and 12-week Transformation.",
+  alternates: {
+    canonical: "/programs",
+  },
+  openGraph: {
+    title: "Holistic Wellness Programs & Nutrition Packages | Kamloops",
+    description:
+      "Browse tailored wellness coaching and holistic nutrition packages by Danielle Mayer, C.H.N.C. in Kamloops, BC. Packages include the 3-week Refresh and 12-week Transformation.",
+    url: "https://valueyourlifewellness.ca/programs",
+  },
 };
 
 export default function ProgramsPage() {

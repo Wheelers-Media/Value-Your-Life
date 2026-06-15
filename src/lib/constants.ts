@@ -10,7 +10,7 @@ export const BRAND = {
   name: "Value Your Life Wellness",
   tagline: "Value Yourself. Nourish Your Mind. Transform Your Life.",
   subtitle: "Mental Wellness, Nutrition & Life Coaching",
-  domain: "valueyourlife.ca",
+  domain: "valueyourlifewellness.ca",
 } as const;
 
 export const PRACTITIONER = {
