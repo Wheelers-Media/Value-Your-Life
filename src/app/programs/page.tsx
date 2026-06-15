@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Check, ArrowRight, Sparkles, Clock, Coins, ShieldCheck, HelpCircle } from "lucide-react";
 import { PROGRAMS, ADD_ON_SERVICES, CONTACT } from "@/lib/constants";
 import BookingSection from "@/components/booking/BookingSection";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Holistic Wellness Programs & Nutrition Packages | Kamloops",
@@ -23,36 +24,42 @@ export default function ProgramsPage() {
   return (
     <div className="pt-24 md:pt-32 bg-sand-50">
       {/* ── Page Header ── */}
-      <div className="container-brand text-center max-w-3xl mx-auto px-6 mb-16">
-        <span className="inline-flex items-center gap-2 text-sage-600 text-sm font-medium tracking-wide uppercase mb-3">
-          <Sparkles className="w-4 h-4" />
-          Choose Your Path to Wellness
-        </span>
-        <h1 className="font-serif font-bold text-4xl md:text-5xl text-earth-800 mb-6">
-          Tailored Programs & Services
-        </h1>
-        <p className="text-earth-600 text-lg leading-relaxed text-center mx-auto max-w-2xl">
-          Nourishing your body and mind requires a personalized approach. Explore our main coaching containers and add-on services below to find the perfect level of support for your schedule, lifestyle, and goals.
-        </p>
-      </div>
+      <ScrollReveal variant="fade-up" duration={800}>
+        <div className="container-brand text-center max-w-3xl mx-auto px-6 mb-16">
+          <span className="inline-flex items-center gap-2 text-sage-600 text-sm font-medium tracking-wide uppercase mb-3">
+            <Sparkles className="w-4 h-4" />
+            Choose Your Path to Wellness
+          </span>
+          <h1 className="font-serif font-bold text-4xl md:text-5xl text-earth-800 mb-6">
+            Tailored Programs & Services
+          </h1>
+          <p className="text-earth-600 text-lg leading-relaxed text-center mx-auto max-w-2xl">
+            Nourishing your body and mind requires a personalized approach. Explore our main coaching containers and add-on services below to find the perfect level of support for your schedule, lifestyle, and goals.
+          </p>
+        </div>
+      </ScrollReveal>
 
       {/* ── Main Programs (Deep-Dive) ── */}
       <div className="container-brand px-6 mb-24">
         <div className="space-y-16 lg:space-y-24">
-          {PROGRAMS.map((program, idx) => {
+          {PROGRAMS.map((program) => {
             // We want to skip the "discovery" session here since it's featured at the bottom booking block or has its own highlight
             if (program.id === "discovery") return null;
 
             return (
-              <div
+              <ScrollReveal
                 key={program.id}
-                id={`program-detail-${program.id}`}
-                className={`relative bg-white rounded-3xl border border-sand-200 p-8 md:p-12 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start ${
-                  program.featured
-                    ? "ring-2 ring-terracotta-400/50 shadow-lg shadow-terracotta-500/5"
-                    : ""
-                }`}
+                variant="fade-up"
+                duration={800}
               >
+                <div
+                  id={`program-detail-${program.id}`}
+                  className={`relative bg-white rounded-3xl border border-sand-200 p-8 md:p-12 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start ${
+                    program.featured
+                      ? "ring-2 ring-terracotta-400/50 shadow-lg shadow-terracotta-500/5"
+                      : ""
+                  }`}
+                >
                 {/* Decorative side accent for featured program */}
                 {program.featured && (
                   <div className="absolute top-0 right-0 bg-gradient-to-l from-terracotta-500 to-caramel-400 text-white font-bold text-xs uppercase px-5 py-2 rounded-bl-2xl tracking-wider">
@@ -162,7 +169,8 @@ export default function ProgramsPage() {
                     </div>
                   )}
                 </div>
-              </div>
+                </div>
+              </ScrollReveal>
             );
           })}
         </div>
@@ -171,26 +179,33 @@ export default function ProgramsPage() {
       {/* ── Optional Add-On Services ── */}
       <section className="py-24 bg-white border-y border-sand-200">
         <div className="container-brand px-6">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="inline-flex items-center gap-2 text-caramel-500 text-sm font-medium tracking-wide uppercase mb-3">
-              <Coins className="w-4 h-4" />
-              Targeted Support
-            </span>
-            <h2 className="font-serif font-bold text-3xl md:text-4xl text-earth-800 mb-4">
-              Optional Add-On Services
-            </h2>
-            <p className="text-earth-500 text-lg leading-relaxed">
-              Have specific questions or need localized guidance? These single sessions and reviews are designed to complement our core containers or give a quick boost to your routine.
-            </p>
-          </div>
+          <ScrollReveal variant="fade-up" duration={800}>
+            <div className="text-center max-w-2xl mx-auto mb-16">
+              <span className="inline-flex items-center gap-2 text-caramel-500 text-sm font-medium tracking-wide uppercase mb-3">
+                <Coins className="w-4 h-4" />
+                Targeted Support
+              </span>
+              <h2 className="font-serif font-bold text-3xl md:text-4xl text-earth-800 mb-4">
+                Optional Add-On Services
+              </h2>
+              <p className="text-earth-500 text-lg leading-relaxed">
+                Have specific questions or need localized guidance? These single sessions and reviews are designed to complement our core containers or give a quick boost to your routine.
+              </p>
+            </div>
+          </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {ADD_ON_SERVICES.map((service) => (
-              <div
+            {ADD_ON_SERVICES.map((service, index) => (
+              <ScrollReveal
                 key={service.id}
-                id={`add-on-card-${service.id}`}
-                className="bg-sand-50/70 border border-sand-200 rounded-3xl p-6 md:p-8 flex flex-col justify-between hover:shadow-lg transition-all duration-300 group"
+                variant="fade-up"
+                delay={index * 100}
+                className="h-full"
               >
+                <div
+                  id={`add-on-card-${service.id}`}
+                  className="bg-sand-50/70 border border-sand-200 rounded-3xl p-6 md:p-8 flex flex-col justify-between hover:shadow-lg transition-all duration-300 group h-full"
+                >
                 <div>
                   <div className="flex justify-between items-start gap-4 mb-4">
                     <h3 className="font-serif font-bold text-lg text-earth-800 group-hover:text-terracotta-500 transition-colors">
@@ -226,7 +241,8 @@ export default function ProgramsPage() {
                   </a>
                 </div>
               </div>
-            ))}
+            </ScrollReveal>
+          ))}
           </div>
         </div>
       </section>

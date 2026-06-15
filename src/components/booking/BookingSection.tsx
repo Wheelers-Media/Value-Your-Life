@@ -2,6 +2,7 @@
 
 import { Calendar, ExternalLink, ShieldCheck, Clock } from "lucide-react";
 import { CONTACT } from "@/lib/constants";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 
 interface BookingSectionProps {
   title?: string;
@@ -16,25 +17,28 @@ export default function BookingSection({
     <section id="booking" className="relative py-24 md:py-32 bg-sand-100">
       <div className="container-brand px-6">
         {/* ── Section Header ── */}
-        <div className="text-center mb-16 max-w-2xl mx-auto">
-          <span className="inline-flex items-center gap-2 text-terracotta-500 text-sm font-medium tracking-wide uppercase mb-4">
-            <Calendar className="w-4 h-4" />
-            Booking Portal
-          </span>
-          <h2
-            id="booking-headline"
-            className="font-serif font-bold text-earth-800 text-3xl md:text-4xl mb-4"
-          >
-            {title}
-          </h2>
-          <p className="text-earth-500 text-lg leading-relaxed mx-auto">
-            {subtitle}
-          </p>
-        </div>
+        <ScrollReveal variant="fade-up" duration={800}>
+          <div className="text-center mb-16 max-w-2xl mx-auto">
+            <span className="inline-flex items-center gap-2 text-terracotta-500 text-sm font-medium tracking-wide uppercase mb-4">
+              <Calendar className="w-4 h-4" />
+              Booking Portal
+            </span>
+            <h2
+              id="booking-headline"
+              className="font-serif font-bold text-earth-800 text-3xl md:text-4xl mb-4"
+            >
+              {title}
+            </h2>
+            <p className="text-earth-500 text-lg leading-relaxed mx-auto">
+              {subtitle}
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* ── Booking Portal Card ── */}
-        <div className="max-w-3xl mx-auto">
-          <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl border border-sand-200 shadow-xl shadow-earth-800/5 overflow-hidden p-8 md:p-12 text-center">
+        <ScrollReveal variant="scale-up" duration={800} delay={150}>
+          <div className="max-w-3xl mx-auto">
+            <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl border border-sand-200 shadow-xl shadow-earth-800/5 overflow-hidden p-8 md:p-12 text-center">
             {/* Decorative top bar */}
             <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-terracotta-400 via-caramel-400 to-sage-400" />
 
@@ -115,7 +119,8 @@ export default function BookingSection({
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </ScrollReveal>
+    </div>
+  </section>
   );
 }

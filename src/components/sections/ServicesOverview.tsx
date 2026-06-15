@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/card";
 import { PROGRAMS, CONTACT } from "@/lib/constants";
 import { Check, Sparkles, ArrowRight } from "lucide-react";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function ServicesOverview() {
   // Show main 3 tiers (skip discovery for the overview)
@@ -44,16 +45,21 @@ export default function ServicesOverview() {
 
         {/* ── Program Cards ── */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 xl:gap-6">
-          {displayPrograms.map((program) => (
-            <Card
+          {displayPrograms.map((program, index) => (
+            <ScrollReveal
               key={program.id}
-              id={`program-card-${program.id}`}
-              className={`relative group border transition-all duration-500 hover:-translate-y-2 flex flex-col h-full ${
-                program.featured
-                  ? "bg-gradient-to-b from-terracotta-500 to-terracotta-600 text-sand-50 border-terracotta-600 shadow-xl shadow-terracotta-500/20 scale-[1.02] md:scale-105"
-                  : "bg-white/80 backdrop-blur-sm border-sand-200 hover:border-terracotta-300/50 hover:shadow-xl hover:shadow-earth-800/5"
-              } rounded-3xl overflow-hidden`}
+              variant="fade-up"
+              delay={index * 100}
+              className="h-full"
             >
+              <Card
+                id={`program-card-${program.id}`}
+                className={`relative group border transition-all duration-500 hover:-translate-y-2 flex flex-col h-full ${
+                  program.featured
+                    ? "bg-gradient-to-b from-terracotta-500 to-terracotta-600 text-sand-50 border-terracotta-600 shadow-xl shadow-terracotta-500/20 scale-[1.02] md:scale-105"
+                    : "bg-white/80 backdrop-blur-sm border-sand-200 hover:border-terracotta-300/50 hover:shadow-xl hover:shadow-earth-800/5"
+                } rounded-3xl overflow-hidden`}
+              >
               {/* Featured badge */}
               {program.featured && (
                 <div className="absolute top-0 right-0 bg-caramel-400 text-earth-900 text-xs font-bold px-4 py-1.5 rounded-bl-2xl">
@@ -150,8 +156,9 @@ export default function ServicesOverview() {
                 </a>
               </CardFooter>
             </Card>
-          ))}
-        </div>
+          </ScrollReveal>
+        ))}
+      </div>
 
         {/* ── Discovery Session CTA ── */}
         <div className="mt-16 text-center">
