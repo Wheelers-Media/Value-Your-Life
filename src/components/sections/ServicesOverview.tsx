@@ -48,7 +48,7 @@ export default function ServicesOverview() {
             <Card
               key={program.id}
               id={`program-card-${program.id}`}
-              className={`relative group border transition-all duration-500 hover:-translate-y-2 ${
+              className={`relative group border transition-all duration-500 hover:-translate-y-2 flex flex-col h-full ${
                 program.featured
                   ? "bg-gradient-to-b from-terracotta-500 to-terracotta-600 text-sand-50 border-terracotta-600 shadow-xl shadow-terracotta-500/20 scale-[1.02] md:scale-105"
                   : "bg-white/80 backdrop-blur-sm border-sand-200 hover:border-terracotta-300/50 hover:shadow-xl hover:shadow-earth-800/5"
@@ -99,7 +99,7 @@ export default function ServicesOverview() {
                 </div>
               </CardHeader>
 
-              <CardContent className="px-7 pb-4">
+              <CardContent className="px-7 pb-4 flex-grow">
                 <p
                   className={`text-sm leading-relaxed mb-6 ${
                     program.featured
@@ -133,7 +133,7 @@ export default function ServicesOverview() {
                 </ul>
               </CardContent>
 
-              <CardFooter className="px-7 pb-8 pt-4">
+              <CardFooter className="px-7 pb-8 pt-4 mt-auto">
                 <a
                   href={CONTACT.bookingUrl}
                   target="_blank"

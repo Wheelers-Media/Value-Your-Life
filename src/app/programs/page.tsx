@@ -22,7 +22,7 @@ export default function ProgramsPage() {
         <h1 className="font-serif font-bold text-4xl md:text-5xl text-earth-800 mb-6">
           Tailored Programs & Services
         </h1>
-        <p className="text-earth-600 text-lg leading-relaxed">
+        <p className="text-earth-600 text-lg leading-relaxed text-center mx-auto max-w-2xl">
           Nourishing your body and mind requires a personalized approach. Explore our main coaching containers and add-on services below to find the perfect level of support for your schedule, lifestyle, and goals.
         </p>
       </div>
