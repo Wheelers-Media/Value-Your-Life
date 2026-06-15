@@ -24,6 +24,13 @@ export const PRACTITIONER = {
   yearCertified: 2019,
 } as const;
 
+// ── Contact & Booking ──
+export const CONTACT = {
+  email: "valueyourlife@outlook.com",
+  location: "Kamloops, BC",
+  bookingUrl: "https://my.practicebetter.io/#/610c73543980330f000f7e1b/bookings?step=services",
+} as const;
+
 // ── Mandatory Footer Disclaimer (must appear on every page) ──
 export const DISCLAIMER = `The entire contents of this website are based upon the opinions of Danielle Mayer with Value Your Life Wellness. Please note that Danielle Mayer with Value Your Life Wellness is not a dietitian, physician, pharmacist or other licensed healthcare professional. The information on this website is NOT intended as medical advice, nor is it intended to replace the care of a qualified health care professional. This content is not intended to diagnose or treat any diseases. Always consult with your primary care physician or licensed healthcare provider for all diagnosis and treatment of any diseases or conditions, for medications or medical advice as well as before changing your health care regimen.`;
 
@@ -37,7 +44,7 @@ export const NAV_LINKS = [
 
 export const PRIMARY_CTA = {
   label: "Book a Free Discovery Session",
-  href: "/contact#booking",
+  href: "/programs#booking",
 } as const;
 
 // ── Hero Section ──
@@ -80,12 +87,12 @@ export const PROGRAMS = [
     featured: false,
   },
   {
-    id: "refresh",
-    name: "Mental Wellness Refresh",
+    id: "clarity",
+    name: "Clarity Session",
     price: "$250",
     duration: "90-minute intensive session",
     description:
-      "Designed for individuals feeling overwhelmed, stuck, or uncertain about their next steps. Leave with clarity, direction, and practical next steps.",
+      "A focused deep-dive session designed to help you gain clarity, reduce overwhelm, and identify your next best steps.",
     includes: [
       "Comprehensive wellness review",
       "Stress & lifestyle assessment",
@@ -93,64 +100,104 @@ export const PROGRAMS = [
       "Personalized action plan",
       "Follow-up summary email",
     ],
-    bestFor:
-      "Individuals looking for immediate support and a clear path forward.",
-    cta: "Start Your Refresh",
+    bestFor: "Individuals looking for immediate support and a clear path forward.",
+    cta: "Start with Clarity",
     featured: false,
   },
   {
     id: "foundations",
-    name: "Foundations of Wellness",
-    price: "$650",
-    duration: "6 weeks of personalized support",
+    name: "Foundations Reset",
+    price: "$450",
+    duration: "4 weeks of coaching support",
     description:
-      "Build sustainable habits that support your mental and physical well-being with weekly coaching and personalized nutrition guidance.",
+      "A short-term program to help you stabilize routines, build awareness, and begin creating sustainable wellness habits.",
     includes: [
       "Initial 60-minute assessment",
-      "Five 30-minute weekly coaching sessions",
-      "Personalized nutrition recommendations",
-      "Wellness habit development",
+      "Three 30-minute weekly coaching sessions",
+      "Basic nutrition + habit guidance",
+      "Stress & mindset support",
       "Email support between sessions",
     ],
-    focusAreas: [
-      "Stress management",
-      "Energy improvement",
-      "Nutrition fundamentals",
-      "Mindset development",
-      "Self-care practices",
-    ],
-    bestFor: "Creating a strong foundation for lasting wellness.",
+    bestFor: "Individuals who need structure and accountability to get started.",
     cta: "Build Your Foundation",
+    featured: false,
+  },
+  {
+    id: "growth",
+    name: "Wellness Growth Program",
+    price: "$850",
+    duration: "8 weeks of coaching & nutrition support",
+    description:
+      "A structured coaching container focused on strengthening consistency, mindset, and long-term wellness habits.",
+    includes: [
+      "Initial 60-minute deep assessment",
+      "Seven 30-minute weekly coaching sessions",
+      "Personalized nutrition guidance",
+      "Habit + mindset development plan",
+      "Accountability support",
+      "Email support between sessions",
+    ],
+    bestFor: "Clients ready to move beyond starting and into sustainable change.",
+    cta: "Create Lasting Momentum",
     featured: false,
   },
   {
     id: "transformation",
     name: "Value Your Life Transformation",
-    price: "$1,200",
+    price: "$1,350",
     duration: "12 weeks of coaching & nutrition support",
-    paymentPlan: "Or 3 payments of $400",
+    paymentPlan: "Or 3 payments of $450",
     description:
-      "Our signature program — designed for individuals committed to creating meaningful, sustainable life change across mind, body, and purpose.",
+      "Our signature program — your highest-level transformation experience, designed for individuals committed to deep, sustainable change across mind, body, and purpose.",
     includes: [
       "Initial 90-minute deep dive session",
       "Eleven 30-minute weekly coaching sessions",
       "Personalized wellness roadmap",
-      "Nutrition guidance",
-      "Mindset coaching",
-      "Accountability support",
-      "Unlimited email support",
+      "Advanced nutrition + lifestyle guidance",
+      "Mindset + identity coaching",
+      "Accountability + integration support",
+      "Priority email support",
     ],
-    focusAreas: [
-      "Mental wellness",
-      "Nutrition optimization",
-      "Confidence building",
-      "Life purpose & values alignment",
-      "Stress reduction",
-      "Sustainable lifestyle change",
-    ],
-    bestFor: "Transforming your habits, mindset, and overall well-being.",
-    cta: "Start Your Transformation",
+    bestFor: "Individuals committed to deep, sustainable change across mind, body, and purpose.",
+    cta: "Fully Step Into Your Next Level",
     featured: true,
+  },
+] as const;
+
+// ── Optional Add-On Services ──
+export const ADD_ON_SERVICES = [
+  {
+    id: "nutrition-review",
+    name: "Personalized Nutrition Review",
+    price: "$140",
+    description: "A comprehensive review of your current dietary patterns with custom adjustments to clear brain fog and support sustained daily energy.",
+    details: [
+      "Review of current eating habits",
+      "Nutrition recommendations",
+      "Written summary",
+    ],
+  },
+  {
+    id: "goal-mapping",
+    name: "Wellness Vision & Goal Mapping Session",
+    price: "$180",
+    description: "A 60-minute interactive mapping session using a values-based framework to build your custom longevity roadmap.",
+    details: [
+      "60-minute session",
+      "Values assessment",
+      "Goal setting framework",
+      "Personalized roadmap",
+    ],
+  },
+  {
+    id: "follow-up",
+    name: "Follow-Up Coaching Session",
+    price: "$150",
+    description: "A 60-minute high-touch coaching touchpoint designed exclusively for existing clients to keep momentum and maintain progress.",
+    details: [
+      "60-minute coaching session",
+      "Existing clients only",
+    ],
   },
 ] as const;
 

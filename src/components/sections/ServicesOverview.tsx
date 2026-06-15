@@ -9,7 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { PROGRAMS } from "@/lib/constants";
+import { PROGRAMS, CONTACT } from "@/lib/constants";
 import { Check, Sparkles, ArrowRight } from "lucide-react";
 
 export default function ServicesOverview() {
@@ -134,8 +134,10 @@ export default function ServicesOverview() {
               </CardContent>
 
               <CardFooter className="px-7 pb-8 pt-4">
-                <Link
-                  href="/contact#booking"
+                <a
+                  href={CONTACT.bookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   id={`cta-${program.id}`}
                   className={`flex items-center justify-center gap-2 w-full font-semibold py-3 rounded-full transition-all duration-300 group/btn ${
                     program.featured
@@ -145,7 +147,7 @@ export default function ServicesOverview() {
                 >
                   {program.cta}
                   <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
-                </Link>
+                </a>
               </CardFooter>
             </Card>
           ))}
@@ -163,13 +165,15 @@ export default function ServicesOverview() {
                 required.
               </p>
             </div>
-            <Link
-              href="/contact#booking"
+            <a
+              href={CONTACT.bookingUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               id="services-discovery-cta"
               className="inline-flex items-center justify-center bg-sage-500 text-sand-50 hover:bg-sage-600 font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300 whitespace-nowrap"
             >
               Book a Free Discovery Session
-            </Link>
+            </a>
           </div>
         </div>
       </div>

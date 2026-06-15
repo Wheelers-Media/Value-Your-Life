@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import EmpathyBlock from "@/components/sections/EmpathyBlock";
-import GHLBookingWrapper from "@/components/ghl/GHLBookingWrapper";
+import BookingSection from "@/components/booking/BookingSection";
 
 export const metadata: Metadata = {
   title: "About Danielle | Value Your Life Wellness",
@@ -64,7 +64,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <GHLBookingWrapper />
+      <BookingSection />
     </div>
   );
 }

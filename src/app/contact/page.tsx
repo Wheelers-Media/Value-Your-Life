@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import GHLBookingWrapper from "@/components/ghl/GHLBookingWrapper";
+import BookingSection from "@/components/booking/BookingSection";
 import { Mail, MapPin } from "lucide-react";
+import { CONTACT } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Contact & Booking | Value Your Life Wellness",
@@ -34,10 +35,10 @@ export default function ContactPage() {
                 Have a question before booking? Feel free to send an email.
               </p>
               <a 
-                href="mailto:danielle@valueyourlife.ca" 
+                href={`mailto:${CONTACT.email}`} 
                 className="text-terracotta-600 font-semibold hover:text-terracotta-700 underline underline-offset-4"
               >
-                danielle@valueyourlife.ca
+                {CONTACT.email}
               </a>
             </div>
 
@@ -47,7 +48,7 @@ export default function ContactPage() {
               </div>
               <h3 className="font-serif font-bold text-xl text-earth-800 mb-2">Location</h3>
               <p className="text-earth-600 mb-6">
-                Based in Alberta, Canada. Sessions are conducted virtually for your convenience.
+                Based in {CONTACT.location}. Sessions are conducted virtually for your convenience.
               </p>
               <span className="text-sage-700 font-semibold">
                 Online / Virtual Consultations
@@ -57,9 +58,9 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <GHLBookingWrapper 
+      <BookingSection 
         title="Schedule Your Discovery Session" 
-        subtitle="Select a time that works for you from the calendar below. This 30-minute session is completely free."
+        subtitle="Select a time that works for you from the calendar. This 30-minute session is completely free."
       />
     </div>
   );

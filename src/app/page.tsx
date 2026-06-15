@@ -2,7 +2,7 @@
 import Hero from "@/components/sections/Hero";
 import EmpathyBlock from "@/components/sections/EmpathyBlock";
 import ServicesOverview from "@/components/sections/ServicesOverview";
-import GHLBookingWrapper from "@/components/ghl/GHLBookingWrapper";
+import BookingSection from "@/components/booking/BookingSection";
 
 export default function HomePage() {
   return (
@@ -10,7 +10,7 @@ export default function HomePage() {
       <Hero />
       <EmpathyBlock />
       <ServicesOverview />
-      <GHLBookingWrapper />
+      <BookingSection />
     </>
   );
 }
